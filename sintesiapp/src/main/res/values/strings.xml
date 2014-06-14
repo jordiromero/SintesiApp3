@@ -11,5 +11,7 @@
     <string name="title_activity_crea_reserva">CreaReservaActivity</string>
     <string name="title_activity_consulta_reserva">ConsultaReservaActivity</string>
     <string name="title_activity_mapa">MapaActivity</string>
+    <string name="title_activity_consulta_menu_activity2">ConsultaMenuActivity2</string>
+    <string name="title_activity_consulta_menu_activity">consultamenuactivity</string>
 
 </resources>

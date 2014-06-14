@@ -3,20 +3,16 @@ package com.iesebre.sintesiapp3.sintesiapp;
 import java.util.Locale;
 
 import android.app.Activity;
-import android.app.ActionBar;
 import android.app.Fragment;
 import android.app.FragmentManager;
-import android.app.FragmentTransaction;
 import android.support.v13.app.FragmentPagerAdapter;
 import android.os.Bundle;
 import android.support.v4.view.ViewPager;
-import android.view.Gravity;
 import android.view.LayoutInflater;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.TextView;
 
 
 public class ConsultaMenuActivity extends Activity {
@@ -39,7 +35,7 @@ public class ConsultaMenuActivity extends Activity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_consulta_menu);
+        setContentView(R.layout.activity_consulta_menu_activity);
 
 
 
@@ -57,7 +53,7 @@ public class ConsultaMenuActivity extends Activity {
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         // Inflate the menu; this adds items to the action bar if it is present.
-        getMenuInflater().inflate(R.menu.consulta_menu, menu);
+        getMenuInflater().inflate(R.menu.consulta_menu_activity2, menu);
         return true;
     }
 
@@ -141,7 +137,7 @@ public class ConsultaMenuActivity extends Activity {
         @Override
         public View onCreateView(LayoutInflater inflater, ViewGroup container,
                 Bundle savedInstanceState) {
-            View rootView = inflater.inflate(R.layout.fragment_consulta_menu, container, false);
+            View rootView = inflater.inflate(R.layout.fragment_consulta_menu_activity, container, false);
             return rootView;
         }
     }
