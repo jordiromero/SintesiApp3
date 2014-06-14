@@ -16,6 +16,7 @@
     <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
     <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
 
+
     <application
         android:allowBackup="true"
         android:icon="@drawable/ic_launcher"
@@ -47,7 +48,7 @@
 
         <meta-data
             android:name="com.google.android.maps.v2.API_KEY"
-            android:value="AIzaSyB4u4IMut0NHbdbUoGSLB_UgIwvam5xiIE" />
+            android:value="AIzaSyArqlMsQFwvYDrIL7zGibmxL1owH6Wq0CY" />
         <meta-data
             android:name="com.google.android.gms.version"
             android:value="@integer/google_play_services_version" />

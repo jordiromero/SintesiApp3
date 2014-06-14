@@ -2,8 +2,10 @@ package com.iesebre.sintesiapp3.sintesiapp;
 
 import android.app.Activity;
 import android.os.Bundle;
+import android.support.v4.app.FragmentActivity;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.widget.Toast;
 
 import com.google.android.gms.maps.CameraUpdateFactory;
 import com.google.android.gms.maps.GoogleMap;
@@ -14,7 +16,7 @@ import com.google.android.gms.maps.model.Marker;
 import com.google.android.gms.maps.model.MarkerOptions;
 
 
-public class MapaActivity extends Activity {
+public class MapaActivity extends FragmentActivity {
 
     GoogleMap map;
     private static final LatLng EL_TEU_RESTAURANT = new LatLng(40.81471, 0.515187);
@@ -27,6 +29,7 @@ public class MapaActivity extends Activity {
         try {
             if (map == null){
                 map=((MapFragment) getFragmentManager().findFragmentById(R.id.map)).getMap();
+                Toast.makeText(this,"Google Maps no es troba operatiu.", Toast.LENGTH_LONG).show();
             }
             Marker rest = map.addMarker(new MarkerOptions().position(EL_TEU_RESTAURANT).title("El teu restaurant"));
             CameraPosition cameraPosition = new CameraPosition.Builder().target(EL_TEU_RESTAURANT).zoom(16).build();
@@ -45,7 +48,7 @@ public class MapaActivity extends Activity {
         return true;
     }
 
-    @Override
+  /*  @Override
     public boolean onOptionsItemSelected(MenuItem item) {
         // Handle action bar item clicks here. The action bar will
         // automatically handle clicks on the Home/Up button, so long
@@ -55,5 +58,5 @@ public class MapaActivity extends Activity {
             return true;
         }
         return super.onOptionsItemSelected(item);
-    }
+    }*/
 }
