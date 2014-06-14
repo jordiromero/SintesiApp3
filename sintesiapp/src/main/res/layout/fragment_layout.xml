@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.iesebre.sintesiapp3.sintesiapp.DashboardLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:layout_weight="1"
+    android:background="#f8f9fe" >
+    <!--  Consulta Menu Button -->
+    <Button
+        android:id="@+id/btn_consulta_menu"
+        style="@style/DashboardButton"
+        android:drawableTop="@drawable/ic_consultar"
+        android:text="Consulta Menu" />
+
+    <!--  Crea Reserva Button -->
+    <Button
+        android:id="@+id/btn_crea_reserva"
+        style="@style/DashboardButton"
+        android:drawableTop="@drawable/ic_crea_reserva"
+        android:text="Crea Reserva" />
+
+    <!--  Consulta Reserva Button -->
+    <Button
+        android:id="@+id/btn_busca_reserva"
+        style="@style/DashboardButton"
+        android:drawableTop="@drawable/ic_busca_reserva"
+        android:text="Consulta Reserva" />
+
+    <!--  Mapa Button -->
+    <Button
+        android:id="@+id/btn_mapa"
+        style="@style/DashboardButton"
+        android:drawableTop="@drawable/ic_mapa"
+        android:text="Mapa" />
+
+
+
+</com.iesebre.sintesiapp3.sintesiapp.DashboardLayout>
