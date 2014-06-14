@@ -2,14 +2,13 @@ apply plugin: 'android'
 
 android {
     compileSdkVersion 19
-    buildToolsVersion "19.1.0"
-
+    buildToolsVersion '19.1.0'
     defaultConfig {
-        applicationId "com.iesebre.sintesiapp3.sintesiapp"
+        applicationId 'com.iesebre.sintesiapp3.sintesiapp'
         minSdkVersion 14
         targetSdkVersion 18
         versionCode 1
-        versionName "1.0"
+        versionName '1.0'
     }
     buildTypes {
         release {
@@ -17,9 +16,12 @@ android {
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
         }
     }
+    productFlavors {
+    }
 }
 
 dependencies {
     compile fileTree(dir: 'libs', include: ['*.jar'])
     compile 'com.android.support:support-v13:19.+'
+    compile 'com.google.android.gms:play-services:+'
 }

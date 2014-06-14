@@ -8,6 +8,12 @@
         revision="19.1.0"
         sha1="6b852a232f642c75a7fdfc7212b841b8c8f8959c"/>
     <item
+        dex="/home/jordi/AndroidStudioProjects/SintesiApp3/sintesiapp/build/intermediates/pre-dexed/debug/classes-50a90262aef6865eea769038ae227306c6e2b875.jar"
+        jar="/home/jordi/AndroidStudioProjects/SintesiApp3/build/intermediates/exploded-aar/com.google.android.gms/play-services/4.4.52/classes.jar"
+        jumboMode="false"
+        revision="19.1.0"
+        sha1="3dfdf1db5ce5ea2999a5dcde8c8e650b02660059"/>
+    <item
         dex="/home/jordi/AndroidStudioProjects/SintesiApp3/sintesiapp/build/intermediates/pre-dexed/debug/support-v4-19.1.0-09322bcd812d6789278087ed32fc5d7f9de6b0ef.jar"
         jar="/usr/share/android-studio/sdk/extras/android/m2repository/com/android/support/support-v4/19.1.0/support-v4-19.1.0.jar"
         jumboMode="false"
