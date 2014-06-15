@@ -78,10 +78,10 @@ public class MainActivity extends ListActivity {
                         String price = m.getString(TAG_PRICE);
                         HashMap<String,String> menu = new HashMap<String, String>();
                         menu.put(TAG_IMAGE, image);
-                        menu.put(TAG_NAME, name);
-                        menu.put(TAG_DESCRIPTION, description);
-                        menu.put(TAG_TYPE, m_type);
-                        menu.put(TAG_PRICE, price);
+                        menu.put(TAG_NAME, "Nom: " +name);
+                        menu.put(TAG_DESCRIPTION,"Descripció: "+ description);
+                        menu.put(TAG_TYPE, "Tipus: "+m_type);
+                        menu.put(TAG_PRICE, "Preu: "+price);
                         menuList.add(menu);
                     }
 
