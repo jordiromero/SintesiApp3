@@ -20,6 +20,11 @@
             android:textStyle="bold" />
     </LinearLayout>
 
+    <ListView
+        android:id="@+id/list_tot"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"/>
+
 
 
 </LinearLayout>
