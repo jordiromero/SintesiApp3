@@ -1,6 +1,8 @@
 package com.iesebre.sintesiapp3.sintesiapp;
 
+import android.app.ActionBar;
 import android.app.Activity;
+import android.app.FragmentTransaction;
 import android.app.ListActivity;
 import android.app.ProgressDialog;
 import android.os.AsyncTask;
@@ -49,6 +51,8 @@ public class MainActivity extends ListActivity {
         new GetMenu().execute();
     }
 
+
+
     private class GetMenu extends AsyncTask<Void, Void, Void>{
 
         @Override
@@ -81,7 +85,7 @@ public class MainActivity extends ListActivity {
                         menu.put(TAG_NAME, "Nom: " +name);
                         menu.put(TAG_DESCRIPTION,"Descripció: "+ description);
                         menu.put(TAG_TYPE, "Tipus: "+m_type);
-                        menu.put(TAG_PRICE, "Preu: "+price);
+                        menu.put(TAG_PRICE, "Preu: "+price+" €");
                         menuList.add(menu);
                     }
 

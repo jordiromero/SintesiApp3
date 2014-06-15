@@ -75,7 +75,7 @@ public class ConsultaMenuActivity extends FragmentActivity implements ActionBar.
         int index = tab.getPosition();
         switch (index){
             case 0:
-                //setContentView(R.layout.fragment_consulta_menu_activity);
+                setContentView(R.layout.fragment_consulta_menu_activity);
                 Intent i = new Intent(this, MainActivity.class);
                 startActivity(i);
                 break;
