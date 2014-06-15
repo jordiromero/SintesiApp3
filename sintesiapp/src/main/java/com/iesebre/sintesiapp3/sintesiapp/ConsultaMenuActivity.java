@@ -18,6 +18,7 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Toast;
 
 
 public class ConsultaMenuActivity extends FragmentActivity implements ActionBar.TabListener {
@@ -71,35 +72,46 @@ public class ConsultaMenuActivity extends FragmentActivity implements ActionBar.
 
     @Override
     public void onTabSelected(ActionBar.Tab tab, FragmentTransaction fragmentTransaction) {
+        int index = tab.getPosition();
+        switch (index){
+            case 0:
+                setContentView(R.layout.fragment_consulta_menu_activity);
+                break;
+            case 1:
+                setContentView(R.layout.entrants_layout);
+                break;
+            case 2:
+                setContentView(R.layout.amanida_layout);
+                break;
+            case 3:
+                setContentView(R.layout.sopes_layout);
+                break;
+            case 4:
+                setContentView(R.layout.arrosos_layout);
+                break;
+            case 5:
+                setContentView(R.layout.pasta_layout);
+                break;
+            case 6:
+                setContentView(R.layout.carns_layout);
+                break;
+            case 7:
+                setContentView(R.layout.peixos_layout);
+                break;
+            case 8:
+                setContentView(R.layout.postres_layout);
+                break;
+            case 9:
+                setContentView(R.layout.vins_layout);
+                break;
+            default:
+                Toast.makeText(this, "Selecciona una pestanya.", Toast.LENGTH_LONG).show();
+                break;
 
-        if(tab.getPosition()==0){
-            setContentView(R.layout.fragment_consulta_menu_activity);
-
-        }else if(tab.getPosition()==1){
-            setContentView(R.layout.entrants_layout);
-        }
-        else if(tab.getPosition()==3){
-            setContentView(R.layout.fragment_consulta_menu_activity);
         }
 
-        else if(tab.getPosition()==4){
-            setContentView(R.layout.fragment_consulta_menu_activity);
-        }
-        else if(tab.getPosition()==5){
-            setContentView(R.layout.fragment_consulta_menu_activity);
-        }
-        else if(tab.getPosition()==6){
-            setContentView(R.layout.fragment_consulta_menu_activity);
-        }
-        else if(tab.getPosition()==7){
-            setContentView(R.layout.fragment_consulta_menu_activity);
-        }
-        else if(tab.getPosition()==8){
-            setContentView(R.layout.fragment_consulta_menu_activity);
-        }
-        else if(tab.getPosition()==9){
-            setContentView(R.layout.fragment_consulta_menu_activity);
-        }
+
+
 
 
     }
